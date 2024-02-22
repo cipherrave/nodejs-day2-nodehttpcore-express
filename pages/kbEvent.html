@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Key Code Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div>Javascript Key Code Viewer</div>
+    </div>
+    <div class="viewer">
+      <h2>Javascript Key Code</h2>
+      <h1 id="keyCodeJSText" style="font-size: 5pc; font-weight: 250;"></h1>
+    </div>
+    <p>Key Code Information</p>
+    <div class="keycodeInfo">
+      <div class="card">
+        <div class="cardTitle">event.key</div>
+        <h2 id="keyNameText"></h1>
+        <div class="cardDescription">
+          The value of the key pressed. Accounts for modifiers keys that return
+          CAPS and alternate chars.
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">event.code</div>
+        <h2 id="keyCodeText"></h1>
+        <div class="cardDescription">
+          The physical key on the keyboard. Doesn't care if you are holding a
+          modifier like Shift.
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">Unicode</div>
+        <h2 id="keyUnicodeText"></h1>
+        <div class="cardDescription"></div>
+      </div>
+      <div class="card">
+        <div class="cardTitle">Description</div>
+        <h2 id="keyDescriptionText"></h1>
+        <div class="cardDescription">
+          This is the description we have created.
+        </div>
+      </div>
+    </div>
+    <footer>Made by <a href="https://github.com/cipherrave" style="all: unset; font-weight: 600;cursor: pointer;">cipherrave</a></footer>
+  </body>
+</html>
